@@ -1,0 +1,48 @@
+<!doctype html>
+<HTML lang="fr">
+    <meta charset="utf-8">
+    <HEAD>
+		<link rel="stylesheet" type="text/css" href="Monstyle.css" />
+        <!-- zone qui contient des directives pour le navigateur -->
+        <TITLE> formulaire inscription </TITLE>
+    </HEAD>
+    <BODY>
+		<h1>Ajouter livre  </h1>
+			<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
+				<div>
+					<!-- zone du titre -->
+					<label for="zoneTitre">Titre : </label>
+					<input type="text" id="zoneTitre" placeholder="Entrez le titre du livre"
+					  name = "zoneTitre" required>
+				</div>
+				<div>
+					<!-- zone de l'auteur -->
+					<label for="zoneAuteur">Auteur : </label>
+					<input type="text" id="zoneAuteur" placeholder="Entrez l'auteur"	
+					name = "zoneAuteur" required>
+				</div>
+				<div>
+					<!-- Menu déroulant pour le genre-->
+					<label for="zoneGenre">Genre : </label>
+					<select id= "zoneGenre" name = "zoneGenre" size = "1">
+						<option value = "Roman">Roman </option>
+						<option value ="Poèsie">Poèsie  </option>
+						<option value ="Nouvelles">Nouvelles  </option>
+						<option value ="Autres">Autres  </option>
+					</select>
+				</div>
+				<div>
+					<!-- Zone du prix -->
+					<label for="zonePrix">Prix : </label>
+					<input type="number" id="zonePrix" placeholder="Entrez le prix"
+					  name = "zonePrix" required>
+					
+				</div>
+				<div class="button">
+					<!-- Zone du bouton valider -->
+					<button type="submit" name= "Valider"> Valider </button>
+				</div>
+			</form>	
+    </BODY>
+    
+</HTML>  
